@@ -28,13 +28,13 @@
         },
         "options": {}
       },
-      "id": "56a00484-f919-4ccb-88fd-5795855c2e26",
+      "id": "e9b884a4-8d06-434f-95de-ef015f423448",
       "name": "Set Params",
       "type": "n8n-nodes-base.set",
       "typeVersion": 2,
       "position": [
-        16592,
-        17936
+        18512,
+        20880
       ]
     },
     {
@@ -44,10 +44,10 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        17776,
-        17920
+        19696,
+        20864
       ],
-      "id": "e6709600-4387-4791-a7ef-4907b44f94a5",
+      "id": "b45de5f8-d244-44e2-82b1-7f6e824a9df3",
       "name": "Merge"
     },
     {
@@ -58,10 +58,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        21840,
-        17984
+        23760,
+        20928
       ],
-      "id": "64953fa4-7448-41f4-b996-9c66c674396e",
+      "id": "0700320a-238e-458f-aeaf-987acc420ca9",
       "name": "Simple Memory"
     },
     {
@@ -71,10 +71,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        24032,
-        17568
+        25952,
+        20512
       ],
-      "id": "b7abbc8f-0ee1-484b-9dfc-eaf79dc5fb27",
+      "id": "6c63aed3-c250-421f-bf8b-25f5b1801981",
       "name": "Create Chart ID"
     },
     {
@@ -85,10 +85,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        16256,
-        17936
+        18176,
+        20880
       ],
-      "id": "c4ac4352-4625-4344-ad29-8fe3535e4b49",
+      "id": "1b01fc9f-48c5-44e0-bc47-bb35c08de949",
       "name": "Search ticker on yahoo finance"
     },
     {
@@ -98,10 +98,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        16432,
-        17936
+        18352,
+        20880
       ],
-      "id": "409d6c39-c5b3-4b27-8461-daab851ccac8",
+      "id": "f1d601bf-c1c7-45c3-9394-6b946793570f",
       "name": "Code Sticker"
     },
     {
@@ -112,10 +112,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        22544,
-        17600
+        24464,
+        20544
       ],
-      "id": "fb761a9a-63a4-4023-8b56-d3a08184913f",
+      "id": "93db030d-262a-47e9-8173-abd0bd6f1df2",
       "name": "Output Telegram"
     },
     {
@@ -127,10 +127,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        23856,
-        17568
+        25776,
+        20512
       ],
-      "id": "c2203912-6a5d-4216-95cb-1f72af394a3c",
+      "id": "27397927-e6b4-4b52-b610-8de28271f6de",
       "name": "Send a text message",
       "webhookId": "f0e18d53-5a73-4e3a-b9f7-6d6bc8d2924f",
       "credentials": {
@@ -147,10 +147,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        15888,
-        17936
+        17808,
+        20880
       ],
-      "id": "f88413c4-10e4-4865-934d-7a62fbbb3009",
+      "id": "d1210c6c-1de2-4017-b091-cb9f3823a57c",
       "name": "Get Profile"
     },
     {
@@ -160,10 +160,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17984,
-        17936
+        19904,
+        20880
       ],
-      "id": "686b379b-f87d-4c6f-8fbb-24c2f33f585e",
+      "id": "67183147-1acb-4848-9640-cdf2ed84bcab",
       "name": "Build AI Payload"
     },
     {
@@ -173,10 +173,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        24240,
-        17568
+        26160,
+        20512
       ],
-      "id": "5d386419-eea5-474b-b430-e350461be902",
+      "id": "58d15992-73e8-43b3-8b24-8cec746aba14",
       "name": "Create Exchange"
     },
     {
@@ -186,10 +186,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        22096,
-        17792
+        24016,
+        20736
       ],
-      "id": "bc4d730f-aee0-482e-b235-99cf1d2ba616",
+      "id": "42fc33be-363f-4586-a785-24ffbdef3f39",
       "name": "Normalize Confidence"
     },
     {
@@ -199,10 +199,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        16064,
-        17936
+        17984,
+        20880
       ],
-      "id": "1864c330-5cc2-4e07-80a7-d59e2fe0945c",
+      "id": "ca632304-7342-4ae9-a914-b614b10963d2",
       "name": "Set Request"
     },
     {
@@ -255,10 +255,10 @@
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1,
       "position": [
-        22784,
-        17600
+        24704,
+        20544
       ],
-      "id": "507874a5-6ca4-43ee-b663-2124ec1746bc",
+      "id": "d480e295-26ad-418d-b2b2-3b33f2ae7078",
       "name": "Insert row"
     },
     {
@@ -274,10 +274,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.3,
       "position": [
-        21728,
-        17984
+        23648,
+        20928
       ],
-      "id": "335b8a64-0999-4edb-a1b2-b6b8a75f77c1",
+      "id": "bb8f23d0-3004-421d-b77f-95bb47940cb2",
       "name": "OpenAI Chat Model",
       "credentials": {
         "openAiApi": {
@@ -297,10 +297,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3,
       "position": [
-        21728,
-        17792
+        23648,
+        20736
       ],
-      "id": "74de52b8-e1f2-4b7e-8030-98a1e5f5c793",
+      "id": "2c3b75fc-74b9-4c36-9a04-6cd14de1deb3",
       "name": "AI Indicator Analyst"
     },
     {
@@ -308,10 +308,10 @@
       "type": "@n8n/n8n-nodes-langchain.toolCalculator",
       "typeVersion": 1,
       "position": [
-        21936,
-        17984
+        23856,
+        20928
       ],
-      "id": "b86f5255-4500-46a6-a14a-0c63d4a35ec0",
+      "id": "44936e21-03ce-4137-8358-e30b0d9c5d49",
       "name": "Calculator"
     },
     {
@@ -321,10 +321,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        16800,
-        17936
+        18720,
+        20880
       ],
-      "id": "d87aa668-cd8d-43e1-bc93-1175a0ffcca2",
+      "id": "5dd27b5e-48b0-455a-a3a3-c18935a3069e",
       "name": "Code in JavaScript"
     },
     {
@@ -377,10 +377,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        17008,
-        17744
+        18928,
+        20688
       ],
-      "id": "5a240e39-3986-4eeb-b8df-59345b18dbc2",
+      "id": "cb49c7ea-f32a-45f4-95d7-3dda16701e87",
       "name": "HTTP Request"
     },
     {
@@ -390,10 +390,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        15920,
-        18304
+        17840,
+        21248
       ],
-      "id": "95b3b29e-46ea-4a2a-a2bb-3d6197284f0b",
+      "id": "1f360c06-5d9c-489d-8b05-fbe8a7775b8d",
       "name": "Set Effective End"
     },
     {
@@ -403,10 +403,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17200,
-        17744
+        19120,
+        20688
       ],
-      "id": "10219b4b-36c4-473c-bee3-ed3b31ab8f15",
+      "id": "dfd1fd75-bbe8-4483-9771-f56678923c36",
       "name": "Normalize Results"
     },
     {
@@ -459,10 +459,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        17008,
-        17936
+        18928,
+        20880
       ],
-      "id": "b6909646-07ff-42a3-9e55-bde4d98edcd4",
+      "id": "4d692cf4-6be5-46b1-ba97-b2e284776252",
       "name": "HTTP Request1"
     },
     {
@@ -515,10 +515,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        16992,
-        18144
+        18912,
+        21088
       ],
-      "id": "13cd4f01-0769-48fc-9d6b-3156dbfcaa55",
+      "id": "4f502079-044d-49bf-9db8-2a35b63d9949",
       "name": "HTTP Request2"
     },
     {
@@ -528,10 +528,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17216,
-        17936
+        19136,
+        20880
       ],
-      "id": "4ee2de83-c1e0-4c60-bc94-787ab1841b20",
+      "id": "f70ba297-e626-415b-a784-b9c3fa913641",
       "name": "Code in JavaScript1"
     },
     {
@@ -541,10 +541,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17216,
-        18144
+        19136,
+        21088
       ],
-      "id": "e7c1b654-3489-48f2-ad1b-c968c957fe6c",
+      "id": "1a5d9a5a-b41b-4f3f-a4ee-0e14d881c8e0",
       "name": "Code in JavaScript2"
     },
     {
@@ -554,10 +554,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17408,
-        17744
+        19328,
+        20688
       ],
-      "id": "397690f6-bdf2-433b-881c-ff090129c36a",
+      "id": "5d9f2e90-5b96-49b7-9cdd-cc05c463d06f",
       "name": "Code in JavaScript3"
     },
     {
@@ -567,10 +567,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17424,
-        17936
+        19344,
+        20880
       ],
-      "id": "db59588a-5b5b-4049-9869-2b31eb49dc52",
+      "id": "59c59ce5-9ac9-4bf8-99bb-fe12d8738eb2",
       "name": "Code in JavaScript4"
     },
     {
@@ -580,10 +580,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        17424,
-        18144
+        19344,
+        21088
       ],
-      "id": "33923fa6-78f5-41fa-8f3b-6e20589a21fd",
+      "id": "c4ea014f-a86b-49f5-9218-9daf818db0f1",
       "name": "Code in JavaScript5"
     },
     {
@@ -607,10 +607,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        15248,
-        18304
+        17168,
+        21248
       ],
-      "id": "99bf14d0-7bf6-47b1-a195-c849d9cd9144",
+      "id": "3fbfbb35-b33a-4c6c-802a-4721cf1e1af7",
       "name": "Clock1"
     },
     {
@@ -620,10 +620,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        15456,
-        18304
+        17376,
+        21248
       ],
-      "id": "c9f9acca-46c6-4b2c-860a-bc0427cebd76",
+      "id": "20bcfd97-49a7-4092-ba3f-6f829029bc03",
       "name": "Code in JavaScript6"
     },
     {
@@ -655,10 +655,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        15680,
-        18304
+        17600,
+        21248
       ],
-      "id": "f55c4f52-40d3-450a-abd4-503156a86445",
+      "id": "fff4d4d0-7380-4ae6-9784-1695fbc4bdd9",
       "name": "If2"
     },
     {
@@ -671,10 +671,10 @@
       "type": "n8n-nodes-base.telegramTrigger",
       "typeVersion": 1.2,
       "position": [
-        15696,
-        17936
+        17616,
+        20880
       ],
-      "id": "bedf5c18-7886-47bb-954f-254545a1a650",
+      "id": "834e99d7-baec-43d6-b0c0-d260507f080e",
       "name": "Telegram Trigger",
       "webhookId": "b5091405-b721-4026-bfa8-eabc14acf0ad",
       "credentials": {
@@ -691,10 +691,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        23440,
-        17984
+        25360,
+        20928
       ],
-      "id": "6cc7c66d-26e1-4b8c-b008-e3cd05544f7f",
+      "id": "81d6a96b-b050-4b33-8717-7b79e7430633",
       "name": "Parse Order Payload"
     },
     {
@@ -725,10 +725,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        23664,
-        17984
+        25584,
+        20928
       ],
-      "id": "03c8bfaa-903f-47ef-a814-d2b7843408c8",
+      "id": "5afd69f7-b70f-4898-aa04-40af79647755",
       "name": "If Order1"
     },
     {
@@ -756,10 +756,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        23936,
-        17968
+        25856,
+        20912
       ],
-      "id": "bf502eb7-8e5c-4a7f-b336-63e3e5d389f2",
+      "id": "52ab6880-9566-4d50-b51a-e72106176969",
       "name": "Submit Order"
     },
     {
@@ -783,10 +783,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        22768,
-        17984
+        24688,
+        20928
       ],
-      "id": "45dd5603-6836-4f7a-b484-5d20e4ed95cf",
+      "id": "306ec95d-8cbc-4928-b67d-abf0df46b754",
       "name": "HTTP Account"
     },
     {
@@ -796,10 +796,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        23168,
-        17984
+        25088,
+        20928
       ],
-      "id": "ab967fe2-64b4-4035-848a-6c66cad658bb",
+      "id": "79a9471d-67d0-4689-a09f-a5b07109deaf",
       "name": "Compute Size"
     },
     {
@@ -884,10 +884,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.4,
       "position": [
-        22288,
-        17760
+        24208,
+        20704
       ],
-      "id": "95c4fd6e-30bd-4626-9617-1e47bb4372c7",
+      "id": "1087a2cb-fe9f-4783-8c0c-a0228b481ac4",
       "name": "Switch"
     },
     {
@@ -936,10 +936,10 @@
       "type": "n8n-nodes-base.dataTable",
       "typeVersion": 1.1,
       "position": [
-        24352,
-        17968
+        26272,
+        20912
       ],
-      "id": "9475dfe6-2e78-4bce-8029-50b02606a551",
+      "id": "66f38b1b-997b-4f2d-86c7-564d3f07643b",
       "name": "Insert row1"
     },
     {
@@ -949,23 +949,23 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        24144,
-        17968
+        26064,
+        20912
       ],
-      "id": "e0143ff6-1e9d-4e62-87a7-dfb3ea39e357",
+      "id": "5c7ff050-594e-4b48-88fc-d620aa64bbff",
       "name": "Normalize Order"
     },
     {
       "parameters": {
-        "jsCode": "// n8n Code node: Derive Option Intent\n// MODE: Run Once for All Items\n//\n// OPTION A behavior:\n// - Outputs 2 items per input (call + put) unless force_right=true\n// - NO forced CALL default: derived_right may be null\n// - option_intent.force_right is ONLY true when explicitly provided\n// - Fix: inferUnderlyingPx() now reads your actual payload shape (summary.priceContext + timeframes.*.price.last_close)\n// - Fix: effective_end can fall back to generatedAt\n\nfunction isPlainObject(x) {\n  return x != null && typeof x === \"object\" && !Array.isArray(x);\n}\n\nfunction safeNum(x) {\n  if (typeof x === \"number\" && Number.isFinite(x)) return x;\n  if (typeof x === \"string\") {\n    const n = Number.parseFloat(x);\n    return Number.isFinite(n) ? n : null;\n  }\n  return null;\n}\n\nfunction boolVal(x) {\n  if (x === true || x === false) return x;\n  if (typeof x === \"string\") {\n    const s = x.trim().toLowerCase();\n    if ([\"true\", \"1\", \"yes\", \"y\"].includes(s)) return true;\n    if ([\"false\", \"0\", \"no\", \"n\"].includes(s)) return false;\n  }\n  return null;\n}\n\nfunction normRight(v) {\n  if (!v) return null;\n  const s = String(v).trim().toLowerCase();\n  if (s === \"call\" || s === \"c\") return \"call\";\n  if (s === \"put\" || s === \"p\") return \"put\";\n  return null;\n}\n\nfunction stripReservedKeys(obj) {\n  if (!isPlainObject(obj)) return {};\n  const out = {};\n  for (const [k, v] of Object.entries(obj)) {\n    if (k === \"pairedItem\") continue;\n    out[k] = v;\n  }\n  return out;\n}\n\nfunction ymdFromAnyDateLike(v) {\n  if (!v) return null;\n  const ms = Date.parse(v);\n  if (!Number.isFinite(ms)) return null;\n  return new Date(ms).toISOString().slice(0, 10);\n}\n\nfunction addDaysYMD(ymd, days) {\n  if (!ymd) return null;\n  const ms = Date.parse(ymd + \"T00:00:00Z\");\n  if (!Number.isFinite(ms)) return null;\n  return new Date(ms + days * 86400000).toISOString().slice(0, 10);\n}\n\n// FIXED: reads price from your payload structure\nfunction inferUnderlyingPx(input) {\n  // 1) root-level (existing behavior)\n  const root =\n    safeNum(input?.underlying_last) ??\n    safeNum(input?.underlying_price) ??\n    safeNum(input?.last_price) ??\n    safeNum(input?.price?.last_close) ??\n    safeNum(input?.price?.close) ??\n    safeNum(input?.price?.last) ??\n    null;\n  if (root != null) return root;\n\n  // 2) summary.priceContext.{htf,mtf,ltf}.price.last_close\n  const pc = input?.summary?.priceContext;\n  const fromSummary =\n    safeNum(pc?.htf?.price?.last_close) ??\n    safeNum(pc?.htf?.price?.close) ??\n    safeNum(pc?.mtf?.price?.last_close) ??\n    safeNum(pc?.mtf?.price?.close) ??\n    safeNum(pc?.ltf?.price?.last_close) ??\n    safeNum(pc?.ltf?.price?.close) ??\n    null;\n  if (fromSummary != null) return fromSummary;\n\n  // 3) timeframes[tf].price.last_close (prefer summary.htf if present)\n  const tfs = input?.timeframes;\n  if (tfs && typeof tfs === \"object\") {\n    const htf = input?.summary?.htf; // e.g. \"5m\"\n    if (htf && tfs[htf]) {\n      const p =\n        safeNum(tfs[htf]?.price?.last_close) ??\n        safeNum(tfs[htf]?.price?.close) ??\n        null;\n      if (p != null) return p;\n    }\n\n    // fallback: try common TFs\n    for (const tf of [\"5m\", \"3m\", \"2m\", \"1m\", \"15m\", \"60m\"]) {\n      if (tfs[tf]) {\n        const p =\n          safeNum(tfs[tf]?.price?.last_close) ??\n          safeNum(tfs[tf]?.price?.close) ??\n          null;\n        if (p != null) return p;\n      }\n    }\n\n    // last resort: any timeframe\n    for (const k of Object.keys(tfs)) {\n      const p =\n        safeNum(tfs[k]?.price?.last_close) ??\n        safeNum(tfs[k]?.price?.close) ??\n        null;\n      if (p != null) return p;\n    }\n  }\n\n  return null;\n}\n\nfunction inferStrikeStep(underlying) {\n  // SPY/QQQ/most ETFs: 1\n  const u = String(underlying || \"\").toUpperCase();\n  if ([\"SPY\", \"QQQ\", \"IWM\", \"DIA\"].includes(u)) return 1;\n  return 1;\n}\n\nfunction computeNearAtmStrikeRange(px, strikeCount, step) {\n  const half = Math.max(1, Math.floor((strikeCount || 12) / 2));\n  const atm = Math.round(px / step) * step;\n  return {\n    strike_gte: atm - half * step,\n    strike_lte: atm + half * step,\n  };\n}\n\nfunction deriveRightFromSignals(input) {\n  // Optional hint only (does not force CALL)\n  const bias =\n    (typeof input?.technical_bias === \"string\" ? input.technical_bias : \"\") ||\n    (typeof input?.trend_direction === \"string\" ? input.trend_direction : \"\") ||\n    \"\";\n  const b = bias.toUpperCase();\n  if (b.includes(\"BULL\") || b.includes(\"UP\")) return \"call\";\n  if (b.includes(\"BEAR\") || b.includes(\"DOWN\")) return \"put\";\n  return null;\n}\n\nconst inputs = $input.all().map(i => stripReservedKeys(i.json || {}));\nconst outputs = [];\n\nfor (const input of inputs) {\n  const existingIntent = isPlainObject(input.option_intent) ? input.option_intent : {};\n\n  const underlying = existingIntent.underlying || input.underlying || input.ticker || \"SPY\";\n\n  // FIX: include generatedAt fallback\n  const effective_end =\n    input.effective_end ||\n    existingIntent.effective_end ||\n    input.end_time ||\n    input.time ||\n    input.generatedAt ||\n    null;\n\n  const anchor_ymd =\n    input.anchor_ymd ||\n    existingIntent.anchor_ymd ||\n    ymdFromAnyDateLike(effective_end) ||\n    new Date().toISOString().slice(0, 10);\n\n  // default expiry window (start tomorrow, 15 days out)\n  const exp_gte = input.exp_gte || existingIntent.exp_gte || addDaysYMD(anchor_ymd, 1);\n  const exp_lte = input.exp_lte || existingIntent.exp_lte || addDaysYMD(anchor_ymd, 7);\n\n  const strike_mode = input.strike_mode || existingIntent.strike_mode || \"near_atm\";\n  const strike_count = safeNum(input.strike_count) ?? safeNum(existingIntent.strike_count) ?? 8;\n  const min_oi = safeNum(input.min_oi) ?? safeNum(existingIntent.min_oi) ?? 0;\n  const max_spread_pct = safeNum(input.max_spread_pct) ?? safeNum(existingIntent.max_spread_pct) ?? 0.01;\n\n  const underlyingPx = inferUnderlyingPx(input);\n  const step = inferStrikeStep(underlying);\n\n  let strike_gte = safeNum(input.strike_gte) ?? safeNum(existingIntent.strike_gte) ?? null;\n  let strike_lte = safeNum(input.strike_lte) ?? safeNum(existingIntent.strike_lte) ?? null;\n\n  // Compute near-ATM strike bounds if missing and we have a price\n  if ((strike_gte == null || strike_lte == null) && strike_mode === \"near_atm\" && underlyingPx != null) {\n    const r = computeNearAtmStrikeRange(underlyingPx, strike_count, step);\n    if (strike_gte == null) strike_gte = r.strike_gte;\n    if (strike_lte == null) strike_lte = r.strike_lte;\n  }\n\n  // force_right only if explicitly provided\n  const force_right = boolVal(input.force_right) || boolVal(existingIntent.force_right);\n\n  // OPTION A: do NOT default derived_right to \"call\"\n  const derived_right = deriveRightFromSignals(input) || normRight(existingIntent.right) || null;\n\n  function buildOut(right) {\n    return {\n      ...input,\n      option_intent: {\n        underlying,\n        right, // explicit per emitted item\n        exp_gte,\n        exp_lte,\n        strike_mode,\n        strike_count,\n        strike_gte,\n        strike_lte,\n        min_oi,\n        max_spread_pct,\n        force_right: force_right === true,\n        effective_end,\n        anchor_ymd,\n      },\n      derived_right,\n      candidate_side: right === \"call\" ? \"CALL\" : right === \"put\" ? \"PUT\" : null,\n\n      // helpful debugging\n      _debug_intent: {\n        underlyingPx,\n        used_step: step,\n        computed_strike_bounds: (strike_gte != null && strike_lte != null && strike_mode === \"near_atm\"),\n      },\n    };\n  }\n\n  if (force_right) {\n    const r = normRight(existingIntent.right || input.right || derived_right) || derived_right;\n    if (r !== \"call\" && r !== \"put\") {\n      throw new Error(`force_right=true but no valid right was provided or inferred (got: ${r})`);\n    }\n    outputs.push({ json: buildOut(r) });\n  } else {\n    // OPTION A: ALWAYS emit both sides for candidate compare\n    outputs.push({ json: buildOut(\"call\") });\n    outputs.push({ json: buildOut(\"put\") });\n  }\n}\n\nreturn outputs;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        "jsCode": "// n8n Code node: Derive Option Intent\n// MODE: Run Once for All Items\n//\n// OPTION A behavior:\n// - Outputs 2 items per input (call + put) unless force_right=true\n// - NO forced CALL default: derived_right may be null\n// - option_intent.force_right is ONLY true when explicitly provided\n// - Fix: inferUnderlyingPx() now reads your actual payload shape (summary.priceContext + timeframes.*.price.last_close)\n// - Fix: effective_end can fall back to generatedAt\n\nfunction isPlainObject(x) {\n  return x != null && typeof x === \"object\" && !Array.isArray(x);\n}\n\nfunction safeNum(x) {\n  if (typeof x === \"number\" && Number.isFinite(x)) return x;\n  if (typeof x === \"string\") {\n    const n = Number.parseFloat(x);\n    return Number.isFinite(n) ? n : null;\n  }\n  return null;\n}\n\nfunction boolVal(x) {\n  if (x === true || x === false) return x;\n  if (typeof x === \"string\") {\n    const s = x.trim().toLowerCase();\n    if ([\"true\", \"1\", \"yes\", \"y\"].includes(s)) return true;\n    if ([\"false\", \"0\", \"no\", \"n\"].includes(s)) return false;\n  }\n  return null;\n}\n\nfunction normRight(v) {\n  if (!v) return null;\n  const s = String(v).trim().toLowerCase();\n  if (s === \"call\" || s === \"c\") return \"call\";\n  if (s === \"put\" || s === \"p\") return \"put\";\n  return null;\n}\n\nfunction stripReservedKeys(obj) {\n  if (!isPlainObject(obj)) return {};\n  const out = {};\n  for (const [k, v] of Object.entries(obj)) {\n    if (k === \"pairedItem\") continue;\n    out[k] = v;\n  }\n  return out;\n}\n\nfunction ymdFromAnyDateLike(v) {\n  if (!v) return null;\n  const ms = Date.parse(v);\n  if (!Number.isFinite(ms)) return null;\n  return new Date(ms).toISOString().slice(0, 10);\n}\n\n\n\n// Return YYYY-MM-DD in a specific timezone (use NY as the trading \"date\")\nfunction ymdInTzFromAnyDateLike(v, timeZone = \"America/New_York\") {\n  if (!v) return null;\n  const ms = Date.parse(v);\n  if (!Number.isFinite(ms)) return null;\n  const d = new Date(ms);\n  // en-CA formats as YYYY-MM-DD\n  return new Intl.DateTimeFormat(\"en-CA\", {\n    timeZone,\n    year: \"numeric\",\n    month: \"2-digit\",\n    day: \"2-digit\",\n  }).format(d);\n}\n\nfunction addDaysYMD(ymd, days) {\n  if (!ymd) return null;\n  const ms = Date.parse(ymd + \"T00:00:00Z\");\n  if (!Number.isFinite(ms)) return null;\n  return new Date(ms + days * 86400000).toISOString().slice(0, 10);\n}\n\n\n// Next business day: +1, then bump Sat/Sun to Monday.\n// (Requirement: +1 day; if Friday -> next Monday.)\nfunction nextBusinessDayYMD(anchorYmd) {\n  if (!anchorYmd) return null;\n  let d = addDaysYMD(anchorYmd, 1);\n  if (!d) return null;\n\n  // 0=Sun, 6=Sat based on UTC day-of-week for the YYYY-MM-DD string\n  const dow = new Date(d + \"T00:00:00Z\").getUTCDay();\n  if (dow === 6) d = addDaysYMD(d, 2); // Sat -> Mon\n  else if (dow === 0) d = addDaysYMD(d, 1); // Sun -> Mon\n\n  return d;\n}\n\n\n// FIXED: reads price from your payload structure\nfunction inferUnderlyingPx(input) {\n  // 1) root-level (existing behavior)\n  const root =\n    safeNum(input?.underlying_last) ??\n    safeNum(input?.underlying_price) ??\n    safeNum(input?.last_price) ??\n    safeNum(input?.price?.last_close) ??\n    safeNum(input?.price?.close) ??\n    safeNum(input?.price?.last) ??\n    null;\n  if (root != null) return root;\n\n  // 2) summary.priceContext.{htf,mtf,ltf}.price.last_close\n  const pc = input?.summary?.priceContext;\n  const fromSummary =\n    safeNum(pc?.htf?.price?.last_close) ??\n    safeNum(pc?.htf?.price?.close) ??\n    safeNum(pc?.mtf?.price?.last_close) ??\n    safeNum(pc?.mtf?.price?.close) ??\n    safeNum(pc?.ltf?.price?.last_close) ??\n    safeNum(pc?.ltf?.price?.close) ??\n    null;\n  if (fromSummary != null) return fromSummary;\n\n  // 3) timeframes[tf].price.last_close (prefer summary.htf if present)\n  const tfs = input?.timeframes;\n  if (tfs && typeof tfs === \"object\") {\n    const htf = input?.summary?.htf; // e.g. \"5m\"\n    if (htf && tfs[htf]) {\n      const p =\n        safeNum(tfs[htf]?.price?.last_close) ??\n        safeNum(tfs[htf]?.price?.close) ??\n        null;\n      if (p != null) return p;\n    }\n\n    // fallback: try common TFs\n    for (const tf of [\"5m\", \"3m\", \"2m\", \"1m\", \"15m\", \"60m\"]) {\n      if (tfs[tf]) {\n        const p =\n          safeNum(tfs[tf]?.price?.last_close) ??\n          safeNum(tfs[tf]?.price?.close) ??\n          null;\n        if (p != null) return p;\n      }\n    }\n\n    // last resort: any timeframe\n    for (const k of Object.keys(tfs)) {\n      const p =\n        safeNum(tfs[k]?.price?.last_close) ??\n        safeNum(tfs[k]?.price?.close) ??\n        null;\n      if (p != null) return p;\n    }\n  }\n\n  return null;\n}\n\nfunction inferStrikeStep(underlying) {\n  // SPY/QQQ/most ETFs: 1\n  const u = String(underlying || \"\").toUpperCase();\n  if ([\"SPY\", \"QQQ\", \"IWM\", \"DIA\"].includes(u)) return 1;\n  return 1;\n}\n\nfunction computeNearAtmStrikeRange(px, strikeCount, step) {\n  const half = Math.max(1, Math.floor((strikeCount || 12) / 2));\n  const atm = Math.round(px / step) * step;\n  return {\n    strike_gte: atm - half * step,\n    strike_lte: atm + half * step,\n  };\n}\n\nfunction deriveRightFromSignals(input) {\n  // Optional hint only (does not force CALL)\n  const bias =\n    (typeof input?.technical_bias === \"string\" ? input.technical_bias : \"\") ||\n    (typeof input?.trend_direction === \"string\" ? input.trend_direction : \"\") ||\n    \"\";\n  const b = bias.toUpperCase();\n  if (b.includes(\"BULL\") || b.includes(\"UP\")) return \"call\";\n  if (b.includes(\"BEAR\") || b.includes(\"DOWN\")) return \"put\";\n  return null;\n}\n\nconst inputs = $input.all().map(i => stripReservedKeys(i.json || {}));\nconst outputs = [];\n\nfor (const input of inputs) {\n  const existingIntent = isPlainObject(input.option_intent) ? input.option_intent : {};\n\n  const underlying = existingIntent.underlying || input.underlying || input.ticker || \"SPY\";\n\n  // FIX: include generatedAt fallback\n  const effective_end =\n    input.effective_end ||\n    existingIntent.effective_end ||\n    input.end_time ||\n    input.time ||\n    input.generatedAt ||\n    null;\n\n  \nconst anchor_ymd =\n  input.anchor_ymd ||\n  existingIntent.anchor_ymd ||\n  ymdInTzFromAnyDateLike(effective_end, \"America/New_York\") ||\n  ymdInTzFromAnyDateLike(new Date().toISOString(), \"America/New_York\");\n\n// REQUIREMENT: take +1 (next trading day) expiry; if Friday -> next Monday\nconst nextExp = nextBusinessDayYMD(anchor_ymd);\n\n// Force \"next day only\" unless explicitly overridden upstream\nconst exp_gte = input.exp_gte || existingIntent.exp_gte || nextExp;\nconst exp_lte = input.exp_lte || existingIntent.exp_lte || nextExp;\n\n\n  const strike_mode = input.strike_mode || existingIntent.strike_mode || \"near_atm\";\n  const strike_count = safeNum(input.strike_count) ?? safeNum(existingIntent.strike_count) ?? 8;\n  const min_oi = safeNum(input.min_oi) ?? safeNum(existingIntent.min_oi) ?? 0;\n  const max_spread_pct = safeNum(input.max_spread_pct) ?? safeNum(existingIntent.max_spread_pct) ?? 0.01;\n\n  const underlyingPx = inferUnderlyingPx(input);\n  const step = inferStrikeStep(underlying);\n\n  let strike_gte = safeNum(input.strike_gte) ?? safeNum(existingIntent.strike_gte) ?? null;\n  let strike_lte = safeNum(input.strike_lte) ?? safeNum(existingIntent.strike_lte) ?? null;\n\n  // Compute near-ATM strike bounds if missing and we have a price\n  if ((strike_gte == null || strike_lte == null) && strike_mode === \"near_atm\" && underlyingPx != null) {\n    const r = computeNearAtmStrikeRange(underlyingPx, strike_count, step);\n    if (strike_gte == null) strike_gte = r.strike_gte;\n    if (strike_lte == null) strike_lte = r.strike_lte;\n  }\n\n  // force_right only if explicitly provided\n  const force_right = boolVal(input.force_right) || boolVal(existingIntent.force_right);\n\n  // OPTION A: do NOT default derived_right to \"call\"\n  const derived_right = deriveRightFromSignals(input) || normRight(existingIntent.right) || null;\n\n  function buildOut(right) {\n    return {\n      ...input,\n      option_intent: {\n        underlying,\n        right, // explicit per emitted item\n        exp_gte,\n        exp_lte,\n        strike_mode,\n        strike_count,\n        strike_gte,\n        strike_lte,\n        min_oi,\n        max_spread_pct,\n        force_right: force_right === true,\n        effective_end,\n        anchor_ymd,\n      },\n      derived_right,\n      candidate_side: right === \"call\" ? \"CALL\" : right === \"put\" ? \"PUT\" : null,\n\n      // helpful debugging\n      _debug_intent: {\n        underlyingPx,\n        used_step: step,\n        computed_strike_bounds: (strike_gte != null && strike_lte != null && strike_mode === \"near_atm\"),\n      },\n    };\n  }\n\n  if (force_right) {\n    const r = normRight(existingIntent.right || input.right || derived_right) || derived_right;\n    if (r !== \"call\" && r !== \"put\") {\n      throw new Error(`force_right=true but no valid right was provided or inferred (got: ${r})`);\n    }\n    outputs.push({ json: buildOut(r) });\n  } else {\n    // OPTION A: ALWAYS emit both sides for candidate compare\n    outputs.push({ json: buildOut(\"call\") });\n    outputs.push({ json: buildOut(\"put\") });\n  }\n}\n\nreturn outputs;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        18176,
-        17936
+        20096,
+        20880
       ],
-      "id": "98f3175f-8d26-463d-bfd0-65bbe9faa907",
+      "id": "3d2aa624-939e-427d-b65f-e820c0f4a626",
       "name": "Derive Option Intent"
     },
     {
@@ -1022,10 +1022,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        18464,
-        18032
+        20384,
+        20976
       ],
-      "id": "33cea488-3a9a-4e75-83e2-545c0d066093",
+      "id": "64667546-cb4a-4f84-871d-22d6a3a85a7c",
       "name": "Get Option Contracts"
     },
     {
@@ -1058,10 +1058,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        20112,
-        17936
+        22032,
+        20880
       ],
-      "id": "f90bef62-71cd-4124-bbd3-ea5fe1abc2fa",
+      "id": "7f28a965-2659-43ce-afa0-3a8c61bab983",
       "name": "Get Option Snapshot"
     },
     {
@@ -1072,10 +1072,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        20384,
-        17936
+        22304,
+        20880
       ],
-      "id": "fffac94e-f611-47d9-b6f2-6f0d5e7c86d3",
+      "id": "acdef54d-8760-4a69-86fe-8fc0e4985eb1",
       "name": "Enrich Payload for AI"
     },
     {
@@ -1108,10 +1108,10 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.3,
       "position": [
-        19264,
-        17952
+        21184,
+        20896
       ],
-      "id": "a67045e4-e576-4bcc-a07b-9374a9d9c46c",
+      "id": "6577eb3c-1587-45c2-bafa-fac4bbf6fd95",
       "name": "Get Option Snapshots (Shortlist)"
     },
     {
@@ -1122,10 +1122,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        19472,
-        17952
+        21392,
+        20896
       ],
-      "id": "b6b1588b-5540-4801-ada8-54de8d9d688e",
+      "id": "4cca6027-9e06-4108-870e-66a321538c7f",
       "name": "Select Contract (Liquid)"
     },
     {
@@ -1156,10 +1156,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        19888,
-        17952
+        21808,
+        20896
       ],
-      "id": "2a4e6d1f-d236-4e36-b3b9-233d53080870",
+      "id": "45140c8a-0c46-42dc-8364-75f931cecab7",
       "name": "Liquidity OK?"
     },
     {
@@ -1170,10 +1170,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        20112,
-        18144
+        22032,
+        21088
       ],
-      "id": "60b6cb5e-997b-43f2-baf5-87ee0b1d7e2f",
+      "id": "bf032d2b-547a-4159-85f6-58e9df3c1e9c",
       "name": "Force WAIT (Liquidity Gate)"
     },
     {
@@ -1184,10 +1184,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        19024,
-        17952
+        20944,
+        20896
       ],
-      "id": "d351a292-0ea7-41cb-9002-a375d214d8f6",
+      "id": "36d1a183-5164-4ff4-ae21-383666111c0d",
       "name": "Select Contract (Shortlist)"
     },
     {
@@ -1197,23 +1197,23 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        21216,
-        17936
+        23136,
+        20880
       ],
-      "id": "621ca1c7-a8e6-4583-8d26-4c617b46f197",
+      "id": "d033b137-227f-46cf-83a9-77a1d09cdf91",
       "name": "Compute Trend & Confidence"
     },
     {
       "parameters": {
-        "jsCode": "// n8n Code node: Compare Candidates\n// MODE: Run Once for All Items\n//\n// FIX:\n// - Do NOT flip to opposite side when bias-side candidate is illiquid.\n// - Default behavior: WAIT if preferred side fails liquidity.\n// - Optional: set $json.allow_countertrend=true to allow taking the other side if it's liquid.\n\nfunction safeNum(x) {\n  if (typeof x === \"number\" && Number.isFinite(x)) return x;\n  if (typeof x === \"string\") {\n    const n = Number.parseFloat(x.trim());\n    return Number.isFinite(n) ? n : null;\n  }\n  return null;\n}\n\nfunction normRight(v) {\n  if (!v) return null;\n  const s = String(v).trim().toLowerCase();\n  if (s === \"call\" || s === \"c\") return \"call\";\n  if (s === \"put\" || s === \"p\") return \"put\";\n  return null;\n}\n\nfunction rightFromSymbol(sym) {\n  if (!sym) return null;\n  const s = String(sym).trim().toUpperCase();\n  const m = s.match(/([CP])\\d{8}$/);\n  if (!m) return null;\n  return m[1] === \"C\" ? \"call\" : m[1] === \"P\" ? \"put\" : null;\n}\n\nfunction pickSymbol(x) {\n  return (\n    x?.option_contract_symbol ||\n    x?.optionContext?.contract?.symbol ||\n    x?.selected_option?.contract_symbol ||\n    x?.selected_contract?.symbol ||\n    null\n  );\n}\n\nfunction sideFrom(x) {\n  const cs = String(x?.candidate_side || \"\").trim().toUpperCase();\n  if (cs === \"CALL\") return \"CALL\";\n  if (cs === \"PUT\") return \"PUT\";\n\n  const r =\n    normRight(x?.option_right) ||\n    normRight(x?.option_intent?.right) ||\n    normRight(x?.desired_option_right) ||\n    rightFromSymbol(pickSymbol(x));\n\n  if (r === \"call\") return \"CALL\";\n  if (r === \"put\") return \"PUT\";\n  return null;\n}\n\nfunction isOk(x) {\n  // Must have passed shortlist AND passed liquidity check AND has a symbol\n  return x?.candidate_pass === true && x?.option_liquidity_ok === true && !!pickSymbol(x);\n}\n\nfunction pickBias(any) {\n  // Prefer deterministic fields if present\n  const td = String(any?.trend_direction_pre || any?.trend_direction || \"\").toLowerCase();\n  const tb = String(any?.technical_bias || \"\").toLowerCase();\n\n  // Normalize to \"bullish\" / \"bearish\" / null\n  if (td.includes(\"down\")) return \"bearish\";\n  if (td.includes(\"up\")) return \"bullish\";\n  if (tb === \"bearish\" || tb === \"bullish\") return tb;\n\n  // Fallback: infer from DMI alignment across available intervals/timeframes\n  // Some upstream payloads use `intervals` (2m/3m/5m), others use `timeframes` (1m/15m/60m).\n  const intervals =\n    (any && typeof any === \"object\" && any.intervals && typeof any.intervals === \"object\")\n      ? any.intervals\n      : (any && typeof any === \"object\" && any.timeframes && typeof any.timeframes === \"object\")\n        ? any.timeframes\n        : null;\n\n  if (!intervals) return null;\n\n  let bull = 0;\n  let bear = 0;\n\n  for (const tf of Object.keys(intervals)) {\n    const dmi = intervals?.[tf]?.dmi;\n    const diPlus = safeNum(dmi?.diPlus);\n    const diMinus = safeNum(dmi?.diMinus);\n    if (diPlus == null || diMinus == null) continue;\n\n    if (diMinus > diPlus) bear += 1;\n    else if (diPlus > diMinus) bull += 1;\n  }\n\n  if (bear > bull && bear > 0) return \"bearish\";\n  if (bull > bear && bull > 0) return \"bullish\";\n  return null;\n}\n\nconst itemsIn = $input.all().map(i => i.json || {}).filter(x => x && typeof x === \"object\");\nif (!itemsIn.length) {\n  return [{\n    json: {\n      option_decision: \"WAIT\",\n      key_factors: [\"No candidates to compare\"],\n      winner_side: null,\n      winner_right: null,\n      overall_bias: null,\n      desired_option_right: null,\n      other_candidate: null,\n    }\n  }];\n}\n\nconst any = itemsIn[0];\nconst overall_bias = pickBias(any); // \"bearish\" | \"bullish\" | null\nconst allow_countertrend = Boolean(any?.allow_countertrend);\n\n// Identify the CALL and PUT candidate items\nlet callItem = null;\nlet putItem = null;\n\nfor (const it of itemsIn) {\n  const s = sideFrom(it);\n  if (s === \"CALL\" && !callItem) callItem = it;\n  if (s === \"PUT\" && !putItem) putItem = it;\n}\n\n// Helper to build a compact \"other_candidate\" summary\nfunction summarizeCandidate(x) {\n  if (!x) return null;\n  return {\n    candidate_side: sideFrom(x),\n    option_contract_symbol: pickSymbol(x),\n    candidate_pass: x?.candidate_pass === true,\n    candidate_score: safeNum(x?.candidate_score) ?? null,\n    candidate_reasons: Array.isArray(x?.candidate_reasons) ? x.candidate_reasons : null,\n    option_bid: safeNum(x?.option_bid) ?? safeNum(x?.optionContext?.quote?.bid) ?? null,\n    option_ask: safeNum(x?.option_ask) ?? safeNum(x?.optionContext?.quote?.ask) ?? null,\n    option_mid: safeNum(x?.option_mid) ?? safeNum(x?.optionContext?.quote?.mid) ?? null,\n    option_spread_pct: safeNum(x?.option_spread_pct) ?? safeNum(x?.optionContext?.quote?.spread_pct) ?? null,\n    option_risk_reward: safeNum(x?.option_risk_reward) ?? null,\n    option_delta: safeNum(x?.option_delta) ?? safeNum(x?.optionContext?.greeks?.delta) ?? null,\n    option_liquidity_ok: x?.option_liquidity_ok === true,\n    option_liquidity_reason: x?.option_liquidity_reason ?? null,\n  };\n}\n\n// Determine preferred side by bias\nlet preferredSide = null; // \"CALL\" | \"PUT\" | null\nif (overall_bias === \"bearish\") preferredSide = \"PUT\";\nif (overall_bias === \"bullish\") preferredSide = \"CALL\";\n\n// Pick preferred/other items\nconst preferredItem = preferredSide === \"PUT\" ? putItem : preferredSide === \"CALL\" ? callItem : null;\nconst otherItem = preferredSide === \"PUT\" ? callItem : preferredSide === \"CALL\" ? putItem : (callItem || putItem);\n\nconst okPreferred = preferredItem ? isOk(preferredItem) : false;\nconst okOther = otherItem ? isOk(otherItem) : false;\n\n// Base selection rules\nlet base = preferredItem || otherItem || any;\nlet winner_side = base ? sideFrom(base) : null;\nlet winner_right =\n  normRight(base?.option_right) ||\n  normRight(base?.option_intent?.right) ||\n  normRight(base?.desired_option_right) ||\n  rightFromSymbol(pickSymbol(base));\n\nconst key_factors = [];\n\n// Default desired right follows bias if known; else follow the chosen base\nlet desired_option_right = null;\nif (preferredSide === \"PUT\") desired_option_right = \"put\";\nelse if (preferredSide === \"CALL\") desired_option_right = \"call\";\nelse desired_option_right = winner_right;\n\n// Decision logic\nlet option_decision = base?.option_decision || \"WAIT\";\n\nif (preferredSide && !okPreferred) {\n  if (allow_countertrend && okOther) {\n    // Explicitly allowed: take other side if liquid\n    base = otherItem;\n    winner_side = sideFrom(base);\n    winner_right =\n      normRight(base?.option_right) ||\n      normRight(base?.option_intent?.right) ||\n      normRight(base?.desired_option_right) ||\n      rightFromSymbol(pickSymbol(base));\n    desired_option_right = winner_right;\n    key_factors.push(`Countertrend allowed: preferred ${preferredSide} not liquid; using ${winner_side}`);\n  } else {\n    // Do NOT flip: WAIT\n    option_decision = \"WAIT\";\n    winner_side = null;      // important: no winner when preferred side fails\n    winner_right = null;\n    key_factors.push(\n      `No liquid candidate on preferred side (${preferredSide}) for bias=${overall_bias}; WAIT (no side flip)`\n    );\n  }\n} else if (preferredSide && okPreferred) {\n  key_factors.push(`Preferred side ${preferredSide} is liquid; aligned with bias=${overall_bias}`);\n}\n\n// Attach other_candidate summary\nconst other_candidate =\n  base === callItem ? summarizeCandidate(putItem) :\n  base === putItem ? summarizeCandidate(callItem) :\n  summarizeCandidate(otherItem && otherItem !== base ? otherItem : (base === callItem ? putItem : callItem));\n\n// Emit ONE item (your downstream expects a single object)\nreturn [{\n  json: {\n    ...base,\n    option_decision,\n    overall_bias,\n    desired_option_right,\n    winner_side,\n    winner_right,\n    key_factors: Array.isArray(base?.key_factors)\n      ? [...base.key_factors, ...key_factors]\n      : key_factors,\n    other_candidate,\n  }\n}];\n\n"
+        "jsCode": "// n8n Code node: Compare Candidates\n// MODE: Run Once for All Items\n//\n// Purpose:\n// - Accept both CALL and PUT candidate items.\n// - Deterministically choose a winner (CALL vs PUT) and attach the other as `other_candidate`.\n// - Keep the winner item as the main payload so downstream nodes (liquidity gating, telegram, AI) stay compatible.\n// - Prevent \"Winner: CALL | Other: N/A\" when both sides exist.\n// - Ensure option_liquidity_reason/spread/quote fields remain consistent with the winner.\n//\n// Output (single item):\n//   - winner_side: \"CALL\" | \"PUT\" | null\n//   - other_candidate: object|null (subset of the losing candidate)\n\nfunction isPlainObject(x) {\n  return x != null && typeof x === \"object\" && !Array.isArray(x);\n}\n\nfunction safeStr(x) {\n  if (x == null) return null;\n  const s = String(x).trim();\n  return s === \"\" ? null : s;\n}\n\nfunction toNum(x) {\n  if (typeof x === \"number\" && Number.isFinite(x)) return x;\n  if (typeof x === \"string\" && x.trim() !== \"\") {\n    const n = Number.parseFloat(x);\n    return Number.isFinite(n) ? n : null;\n  }\n  return null;\n}\n\nfunction toInt(x) {\n  const n = toNum(x);\n  return n == null ? null : Math.trunc(n);\n}\n\nfunction normSide(v) {\n  const s = safeStr(v);\n  if (!s) return null;\n  const t = s.toUpperCase();\n  if (t === \"CALL\" || t === \"C\") return \"CALL\";\n  if (t === \"PUT\" || t === \"P\") return \"PUT\";\n  return null;\n}\n\nfunction inferDesiredSide(base) {\n  const explicit =\n    normSide(base?.winner_side) ??\n    normSide(base?.desired_option_right) ??\n    normSide(base?.option_intent?.right);\n\n  if (explicit) return explicit;\n\n  const bias = safeStr(base?.technical_bias)?.toLowerCase();\n  const td = safeStr(base?.trend_direction)?.toLowerCase();\n\n  if (bias === \"bearish\" || td === \"downtrend\") return \"PUT\";\n  if (bias === \"bullish\" || td === \"uptrend\") return \"CALL\";\n  return null;\n}\n\nfunction pickSubset(c) {\n  // Keep this small but sufficient for Telegram + debugging\n  return {\n    ticker: c?.ticker ?? null,\n    overall_timeframe: c?.overall_timeframe ?? c?.timeframes ?? null,\n    candidate_side: normSide(c?.candidate_side) ?? null,\n    candidate_pass: (c?.candidate_pass === true || c?.candidate_pass === false) ? c.candidate_pass : null,\n\n    option_contract_symbol: safeStr(c?.option_contract_symbol),\n    option_bid: toNum(c?.option_bid),\n    option_ask: toNum(c?.option_ask),\n    option_mid: toNum(c?.option_mid),\n    option_spread_pct: toNum(c?.option_spread_pct),\n    option_entry_premium: toNum(c?.option_entry_premium),\n\n    option_risk_reward: toNum(c?.option_risk_reward),\n    option_delta: toNum(c?.option_delta),\n\n    option_liquidity_ok: (c?.option_liquidity_ok === true || c?.option_liquidity_ok === false) ? c.option_liquidity_ok : null,\n    option_liquidity_reason: safeStr(c?.option_liquidity_reason),\n\n    // Keep a few level fields if present\n    trigger_price: toNum(c?.trigger_price),\n    invalidation_level: toNum(c?.invalidation_level),\n    target_level: toNum(c?.target_level),\n  };\n}\n\nfunction scoreCandidate(c, desiredSide) {\n  const side = normSide(c?.candidate_side) ?? normSide(c?.option_intent?.right) ?? null;\n\n  const passOk = c?.candidate_pass === true ? 1 : 0;\n  const liqOk = c?.option_liquidity_ok === true ? 1 : 0;\n\n  const sideMatch = (desiredSide && side && side === desiredSide) ? 1 : 0;\n\n  const rr = toNum(c?.option_risk_reward);\n  const rrScore = rr == null ? Number.NEGATIVE_INFINITY : rr;\n\n  const sp = toNum(c?.option_spread_pct);\n  const spScore = sp == null ? Number.POSITIVE_INFINITY : sp; // lower is better\n\n  const oi =\n    toInt(c?.selected?.open_interest) ??\n    toInt(c?.open_interest) ??\n    toInt(c?.selected?.oi) ??\n    null;\n  const oiScore = oi == null ? -1 : oi;\n\n  // Lexicographic priority:\n  // 1) candidate_pass\n  // 2) option_liquidity_ok\n  // 3) side match with desired\n  // 4) higher RR\n  // 5) lower spread\n  // 6) higher OI\n  return { passOk, liqOk, sideMatch, rrScore, spScore, oiScore, side };\n}\n\nfunction better(a, b) {\n  // return true if a is better than b\n  const keys = [\"passOk\",\"liqOk\",\"sideMatch\",\"rrScore\",\"spScore\",\"oiScore\"];\n  for (const k of keys) {\n    if (a[k] === b[k]) continue;\n    if (k === \"spScore\") return a[k] < b[k];      // lower spread is better\n    return a[k] > b[k];                           // higher is better\n  }\n  return false;\n}\n\n// ---- main ----\nconst items = $input.all();\nconst candidates = items.map(i => i?.json).filter(isPlainObject);\n\nif (candidates.length === 0) {\n  return [{\n    json: {\n      candidate_pass: false,\n      winner_side: null,\n      other_candidate: null,\n      error: \"no_candidates\"\n    }\n  }];\n}\n\n// Separate by side if both exist\nconst bySide = { CALL: null, PUT: null };\nfor (const c of candidates) {\n  const side = normSide(c?.candidate_side) ?? normSide(c?.option_intent?.right);\n  if (!side) continue;\n  // Keep the \"best\" per side in case duplicates exist\n  if (!bySide[side]) {\n    bySide[side] = c;\n  } else {\n    const desired = inferDesiredSide(c) ?? inferDesiredSide(bySide[side]) ?? null;\n    const s1 = scoreCandidate(c, desired);\n    const s2 = scoreCandidate(bySide[side], desired);\n    if (better(s1, s2)) bySide[side] = c;\n  }\n}\n\n// If only one side exists, winner is that side\nlet left = bySide.CALL || null;\nlet right = bySide.PUT || null;\n\n// If neither side was labeled, fall back to first candidate as winner\nif (!left && !right) {\n  const winner = candidates[0];\n  const out = { ...winner };\n  out.winner_side = normSide(out?.candidate_side) ?? null;\n  out.other_candidate = null;\n  out.candidate_compare = {\n    desired_side: inferDesiredSide(out),\n    candidates_seen: candidates.length,\n    sides_seen: candidates.map(c => normSide(c?.candidate_side) ?? null).filter(Boolean),\n    reason: \"no_side_labels_fell_back_to_first\"\n  };\n  return [{ json: out }];\n}\n\nconst base = (left || right);\nconst desiredSide = inferDesiredSide(base);\n\n// If only one side is present\nif (!left || !right) {\n  const winner = left || right;\n  const out = { ...winner };\n  out.winner_side = normSide(winner?.candidate_side) ?? (left ? \"CALL\" : \"PUT\");\n  out.other_candidate = null;\n  out.candidate_compare = {\n    desired_side: desiredSide,\n    candidates_seen: candidates.length,\n    sides_seen: Object.entries(bySide).filter(([k,v])=>!!v).map(([k])=>k),\n    winner_side: out.winner_side,\n    other_side: null,\n    reason: \"single_side_available\"\n  };\n  return [{ json: out }];\n}\n\n// Both sides exist — compute deterministic winner\nconst sCall = scoreCandidate(left, desiredSide);\nconst sPut  = scoreCandidate(right, desiredSide);\n\nlet winner = left;\nlet loser  = right;\nlet reason = \"score_call_ge_put\";\n\nif (better(sPut, sCall)) {\n  winner = right;\n  loser  = left;\n  reason = \"score_put_gt_call\";\n}\n\n// Build output = winner as main payload\nconst out = { ...winner };\nout.winner_side = normSide(winner?.candidate_side) ?? null;\nout.other_candidate = pickSubset(loser);\n\n// Ensure the winner's own liquidity fields stay on the main payload\n// (prevents reason/spread mismatches in Telegram)\nout.option_liquidity_ok = (winner?.option_liquidity_ok === true || winner?.option_liquidity_ok === false) ? winner.option_liquidity_ok : out.option_liquidity_ok;\nout.option_liquidity_reason = safeStr(winner?.option_liquidity_reason) ?? out.option_liquidity_reason ?? null;\n\n// Candidate compare diagnostics (small)\nout.candidate_compare = {\n  desired_side: desiredSide,\n  winner_side: out.winner_side,\n  other_side: normSide(loser?.candidate_side) ?? null,\n  reason,\n  call: pickSubset(left),\n  put: pickSubset(right),\n};\n\nreturn [{ json: out }];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        19664,
-        17952
+        21584,
+        20896
       ],
-      "id": "4b5c0094-4a48-49c6-befd-5e6c5f54e738",
+      "id": "796800aa-368a-4db1-b83d-fd1f8d31f7f9",
       "name": "Compare Candidates"
     },
     {
@@ -1225,10 +1225,10 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        18752,
-        17952
+        20672,
+        20896
       ],
-      "id": "9b11d967-0810-4a31-a555-3d70d3b89f6b",
+      "id": "542bb28d-0865-44fa-a084-eb2a5530df89",
       "name": "Merge1"
     },
     {
@@ -1240,10 +1240,10 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        22976,
-        17984
+        24896,
+        20928
       ],
-      "id": "fdea6500-777f-46df-b824-9cfd539866be",
+      "id": "94f9cadc-8856-405a-8918-6deae8fc7ba3",
       "name": "Edit Fields"
     },
     {
@@ -1275,10 +1275,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        22544,
-        18000
+        24464,
+        20944
       ],
-      "id": "9bc715ae-5490-4bb9-b4a5-844c748c4ba8",
+      "id": "b78fd29f-f250-4ceb-adf1-4e5b31eb2b31",
       "name": "If"
     },
     {
@@ -1289,36 +1289,36 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        21440,
-        17808
+        23360,
+        20752
       ],
-      "id": "2f1cca53-21fa-44a0-b031-0f650f5d2a72",
+      "id": "be46fa61-025f-4b85-9b11-55f3d23f33eb",
       "name": "Enforce Desired Right"
     },
     {
       "parameters": {
         "jsCode": "// Code node: Compute Option Metrics (Gamma scalp helper)\n// MODE: Run Once for Each Item\n// Adds intrinsic/extrinsic/theta% and simple expected-move.\n// Expects optionContext from Enrich Payload for AI.\n\nfunction n(x) {\n  const v = (typeof x === 'string') ? Number.parseFloat(x) : x;\n  return (typeof v === 'number' && Number.isFinite(v)) ? v : null;\n}\nfunction clamp(x, lo, hi) { return Math.max(lo, Math.min(hi, x)); }\n\nconst j = ($json && typeof $json === 'object') ? $json : {};\nconst oc = j.optionContext || {};\nconst c = oc.contract || {};\nconst q = oc.quote || {};\nconst g = oc.greeks || {};\n\nconst right = (c.right || '').toString().toLowerCase();\nconst strike = n(c.strike);\nconst mid = n(q.mid) ?? n(j.option_mid) ?? n(j.option_entry_premium);\n\nconst underlying =\n  n(j.underlying_last) ??\n  n(j.underlying_price) ??\n  n(j.trigger_price) ??\n  n(j?.intervals?.['60m']?.price?.last_close) ??\n  n(j?.intervals?.['15m']?.price?.last_close) ??\n  n(j?.intervals?.['1m']?.price?.last_close) ??\n  null;\n\n// DTE (calendar days)\nlet dte_days = null;\nif (c.expiration) {\n  const exp = new Date(String(c.expiration).slice(0, 10) + \"T00:00:00Z\").getTime();\n  const now = Date.now();\n  if (Number.isFinite(exp)) {\n    dte_days = Math.max(0, Math.round((exp - now) / (24*60*60*1000)));\n  }\n}\n\nlet intrinsic = null;\nlet extrinsic = null;\nlet extrinsic_pct = null;\n\nif (underlying != null && strike != null && mid != null) {\n  if (right === 'call') intrinsic = Math.max(0, underlying - strike);\n  else if (right === 'put') intrinsic = Math.max(0, strike - underlying);\n\n  extrinsic = mid - (intrinsic ?? 0);\n  extrinsic_pct = (mid > 0) ? clamp(extrinsic / mid, -5, 5) : null;\n}\n\nconst delta = n(g.delta);\nconst gamma = n(g.gamma);\nconst theta = n(g.theta);\nconst vega  = n(g.vega);\nconst iv    = n(g.iv);\n\n// theta “cost” as % of premium per day\nconst theta_pct_per_day = (mid != null && mid > 0 && theta != null)\n  ? clamp((-theta) / mid, -5, 5)\n  : null;\n\n// simple expected move to expiry from IV (calendar)\nconst expected_move_to_exp = (underlying != null && iv != null && dte_days != null)\n  ? underlying * iv * Math.sqrt(Math.max(dte_days, 1) / 365)\n  : null;\n\nreturn {\n  json: {\n    ...j,\n    optionMetrics: {\n      underlying,\n      right: right || null,\n      strike,\n      mid,\n      dte_days,\n      intrinsic,\n      extrinsic,\n      extrinsic_pct,\n      delta,\n      gamma,\n      theta,\n      theta_pct_per_day,\n      vega,\n      iv,\n      expected_move_to_exp,\n    }\n  }\n};"
       },
-      "id": "177f4401-9916-4a77-92bf-20493980f453",
+      "id": "7f43f4cc-1613-4c79-90cf-3f68d2b4da68",
       "name": "Compute Option Metrics",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        20576,
-        17936
+        22496,
+        20880
       ]
     },
     {
       "parameters": {
         "jsCode": "// Code node: Compute Option ATR Stops/TP (Gamma scalp)\n// MODE: Run Once for Each Item\n// Merges option bars response back into the enriched payload and computes ATR-based stop/TP.\n//\n// Assumes upstream node name: \"Compute Option Metrics\"\n// Assumes current $json is the response from Get Option Bars (likely { bars: {SYM:[...]} } )\n\nfunction n(x) {\n  const v = (typeof x === 'string') ? Number.parseFloat(x) : x;\n  return (typeof v === 'number' && Number.isFinite(v)) ? v : null;\n}\nfunction round2(x){ return (x == null) ? null : Math.round(x * 100) / 100; }\n\n// Pull full payload from Compute Option Metrics (to preserve context)\nconst base = ($items(\"Compute Option Metrics\")?.[0]?.json && typeof $items(\"Compute Option Metrics\")[0].json === \"object\")\n  ? $items(\"Compute Option Metrics\")[0].json\n  : (typeof $json === \"object\" ? $json : {});\n\nconst resp = (typeof $json === \"object\" && $json) ? $json : {};\n\nconst sym = (base.option_contract_symbol || base?.optionContext?.contract?.symbol || '').toString().toUpperCase();\n\n// Get bars map\nconst barsMap = resp?.bars ?? resp?.data?.bars ?? resp?.optionBars ?? resp ?? null;\n\n// Extract bars array\nconst bars = (barsMap && sym && Array.isArray(barsMap[sym])) ? barsMap[sym]\n  : (Array.isArray(resp?.bars) ? resp.bars : null);\n\nif (!Array.isArray(bars) || bars.length < 15) {\n  return {\n    json: {\n      ...base,\n      optionStops: {\n        reason: \"Not enough option bars to compute ATR\",\n        atr: null,\n        entry: base?.option_mid ?? base?.option_entry_premium ?? null,\n        stop: null,\n        tp: null,\n        rr: null\n      }\n    }\n  };\n}\n\n// ATR (simple average TR) over last N bars\nconst N = Math.min(14, bars.length - 1);\nlet trs = [];\nfor (let i = bars.length - N; i < bars.length; i++) {\n  const cur = bars[i];\n  const prev = bars[i - 1];\n  const h = n(cur.h), l = n(cur.l), pc = n(prev.c);\n  if (h == null || l == null || pc == null) continue;\n  const tr = Math.max(h - l, Math.abs(h - pc), Math.abs(l - pc));\n  trs.push(tr);\n}\nconst atr = trs.length ? (trs.reduce((a,b)=>a+b,0) / trs.length) : null;\n\n// Entry from current quote mid if available; else last close\nconst entry =\n  n(base?.optionContext?.quote?.mid) ??\n  n(base?.option_mid) ??\n  n(base?.option_entry_premium) ??\n  n(bars[bars.length - 1]?.c) ??\n  null;\n\nif (atr == null || entry == null) {\n  return {\n    json: {\n      ...base,\n      optionStops: {\n        reason: \"Missing ATR or entry\",\n        atr: round2(atr),\n        entry: round2(entry),\n        stop: null,\n        tp: null,\n        rr: null\n      }\n    }\n  };\n}\n\n// Gamma scalp multipliers\nconst STOP_ATR = 0.8;\nconst TP_ATR   = 1.6;\n\nconst stop = Math.max(0.01, entry - STOP_ATR * atr);\nconst tp   = entry + TP_ATR * atr;\n\nconst risk = entry - stop;\nconst reward = tp - entry;\nconst rr = (risk > 0) ? (reward / risk) : null;\n\n// Clean bars out of payload to keep tokens down; keep a tiny summary\nconst bars_summary = {\n  symbol: sym || null,\n  timeframe: \"1Min\",\n  bars_used: bars.length,\n  last_bar_time: bars[bars.length - 1]?.t ?? null\n};\n\nreturn {\n  json: {\n    ...base,\n    option_entry_premium: round2(entry),\n    option_stop_premium: round2(stop),\n    option_take_profit_premium: round2(tp),\n    option_risk_reward: (rr == null) ? null : Number(rr.toFixed(2)),\n    optionStops: {\n      atr: round2(atr),\n      stop_atr: STOP_ATR,\n      tp_atr: TP_ATR,\n      bars_summary\n    }\n  }\n};"
       },
-      "id": "04287b93-6b03-47f8-a776-a7a939b0fb23",
+      "id": "b6547d8d-bbaa-4f9a-83ba-f391e9e0de07",
       "name": "Compute Option ATR Stops/TP",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        20992,
-        17936
+        22912,
+        20880
       ]
     },
     {
@@ -1328,10 +1328,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        20784,
-        17936
+        22704,
+        20880
       ],
-      "id": "b02c56cf-dc46-46e5-bbd8-53522246c53d",
+      "id": "6f01fbfc-3f00-45c2-b1ae-af46d93a5d3b",
       "name": "Replace Get Option Bars (Selected)"
     },
     {
@@ -1348,10 +1348,10 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.3,
       "position": [
-        15040,
-        18304
+        16960,
+        21248
       ],
-      "id": "a8edaa08-6dd3-412d-ad21-bac47e2eadb5",
+      "id": "6b0de532-fe8b-4123-84c9-6d0064a95ce8",
       "name": "Schedule Trigger"
     },
     {
@@ -1382,10 +1382,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        21584,
-        17648
+        23504,
+        20592
       ],
-      "id": "af89e7c5-7801-4dfa-88a7-b18163242f34",
+      "id": "c2005109-d54f-4676-a501-53281645674d",
       "name": "If1"
     },
     {
@@ -1397,10 +1397,10 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        19376,
-        18208
+        21296,
+        21152
       ],
-      "id": "048337ad-2b85-475e-8e4e-576964850e0c",
+      "id": "8325fc8e-5587-4af7-ae6e-261c9cdd36e5",
       "name": "Merge Snapshots (Keep Input)"
     },
     {
@@ -1416,10 +1416,10 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1.3,
       "position": [
-        22976,
-        17792
+        24896,
+        20736
       ],
-      "id": "885d0ff2-9423-472a-a4e7-1869e581936a",
+      "id": "223fed25-c3c8-493d-9f93-7ff22851c092",
       "name": "OpenAI Chat Model1",
       "credentials": {
         "openAiApi": {
@@ -1436,10 +1436,10 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        23072,
-        17792
+        24992,
+        20736
       ],
-      "id": "22c8082c-b645-4e44-862c-bfd95b0deaad",
+      "id": "97ee5b57-08f9-4203-9410-bec38653d51d",
       "name": "Simple Memory1"
     },
     {
@@ -1471,10 +1471,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        23488,
-        17600
+        25408,
+        20544
       ],
-      "id": "1426015e-dadc-4c7f-b080-d527d80285a5",
+      "id": "c2c12186-32d9-4cf6-afe1-2458b6057c2d",
       "name": "If3"
     },
     {
@@ -1488,10 +1488,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 3.1,
       "position": [
-        22976,
-        17600
+        24896,
+        20544
       ],
-      "id": "760077b2-bb6b-4a99-9ef2-f51531f4744d",
+      "id": "83032e94-0708-46a5-81e6-49f21f33ed21",
       "name": "Day Trade Report Validation"
     },
     {
@@ -1501,10 +1501,10 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3.2,
       "position": [
-        23696,
-        17392
+        25616,
+        20336
       ],
-      "id": "1de4d4b3-3a76-41a4-a959-23870b5eddb6",
+      "id": "c1b9059e-6f4f-4b3f-86a0-a15c71e0f89b",
       "name": "Merge2"
     },
     {
@@ -1516,10 +1516,10 @@
       "type": "n8n-nodes-base.telegram",
       "typeVersion": 1.2,
       "position": [
-        24032,
-        17744
+        25952,
+        20688
       ],
-      "id": "cd2e3900-2bb8-40ba-b418-fadc3a9fa14a",
+      "id": "e1dcc0e0-3a9d-4f40-8bb1-3c735b892f58",
       "name": "Send a text message1",
       "webhookId": "f0e18d53-5a73-4e3a-b9f7-6d6bc8d2924f",
       "credentials": {
@@ -1536,10 +1536,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        23856,
-        17744
+        25776,
+        20688
       ],
-      "id": "8c0052cd-5f21-457f-bac1-ced28d7580e1",
+      "id": "8adbff4e-9e38-4057-9202-53be24d33131",
       "name": "Render Verification Report"
     },
     {
@@ -1550,10 +1550,10 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        23296,
-        17600
+        25216,
+        20544
       ],
-      "id": "6f5acb34-72b6-453f-ba8f-b88a2132b917",
+      "id": "585f12dd-9964-4fcb-9144-99ca90bd0f20",
       "name": "Code in JavaScript7"
     }
   ],
@@ -2354,7 +2354,7 @@
     "executionOrder": "v1",
     "availableInMCP": false
   },
-  "versionId": "8452c325-c5b3-4f3f-b9ad-5627c770d925",
+  "versionId": "4a93e00b-c175-4dc1-afb3-91c741a6aa4f",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "dca74b7defb74ff98bf878328bd6cd3d02921b10dd24a3f6f6fd90e41a53b557"
