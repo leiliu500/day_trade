@@ -12,8 +12,10 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-n8n}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-n8n_password}
       POSTGRES_DB: ${POSTGRES_DB:-n8n}
+      TRADING_DB: ${TRADING_DB:-day_trade}
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ../sql:/docker-entrypoint-initdb.d
     ports:
       - "5433:5432"
     healthcheck:
