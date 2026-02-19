@@ -13,6 +13,13 @@
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
+-- Create the trading schema (workflow references tables as trading.<table>)
+CREATE SCHEMA IF NOT EXISTS trading;
+SET search_path TO trading, public;
+
+-- Make trading the default schema for this role so unqualified names also resolve
+ALTER ROLE CURRENT_USER SET search_path TO trading, public;
+
 -- ============================================================================
 -- 1. trading_sessions
 --    One row per trading day per ticker. Groups all signals & decisions.
@@ -45,6 +52,8 @@ CREATE TABLE IF NOT EXISTS signal_snapshots (
     id                      UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     session_id              UUID REFERENCES trading_sessions(id),
     ticker                  VARCHAR(20) NOT NULL,
+    profile                 VARCHAR(5),              -- S / M / L (workflow field)
+    trade_date              DATE DEFAULT CURRENT_DATE, -- workflow field
     snapshot_time           TIMESTAMPTZ DEFAULT NOW(),
 
     -- Multi-TF trend summary
@@ -52,8 +61,8 @@ CREATE TABLE IF NOT EXISTS signal_snapshots (
     trend_strength          VARCHAR(20),     -- weak / moderate / strong
     trend_strength_score    NUMERIC(6,2),
     alignment               VARCHAR(30),     -- all_aligned / htf_mtf_aligned / mixed
-    confidence              NUMERIC(5,4),    -- 0.0000 .. 1.0000
-    confidence_pct          NUMERIC(6,2),    -- 0.00 .. 100.00
+    confidence              NUMERIC(8,4),    -- 0.0000 .. 1.0000 (widened to prevent overflow)
+    confidence_pct          NUMERIC(8,2),    -- 0.00 .. 100.00 (widened to prevent overflow)
     technical_bias          VARCHAR(20),     -- bullish / bearish / null
 
     -- ADX confirmation
@@ -64,6 +73,9 @@ CREATE TABLE IF NOT EXISTS signal_snapshots (
     invalidation_level      NUMERIC(12,4),
     target_level            NUMERIC(12,4),
     underlying_rr           NUMERIC(8,4),
+
+    -- AI option decision (workflow field)
+    ai_option_decision      VARCHAR(20),     -- BUY_CALL / BUY_PUT / WAIT
 
     -- Option signal details
     option_decision         VARCHAR(20),     -- BUY_CALL / BUY_PUT / WAIT
@@ -86,15 +98,22 @@ CREATE TABLE IF NOT EXISTS signal_snapshots (
 
     -- DMI per-TF details (JSONB for flexibility)
     dmi_data                JSONB,           -- { "2m": { diPlus, diMinus, adx }, ... }
+    dmi_snapshot            JSONB,           -- workflow: condensed DMI snapshot
 
     -- TD Sequential / Demark per-TF
     demark_data             JSONB,
+    demark_snapshot         JSONB,           -- workflow: condensed Demark snapshot
 
     -- Candlestick patterns per-TF
     candle_patterns         JSONB,           -- { "2m": { hammer, shooting_star, ... }, ... }
+    candle_snapshot         JSONB,           -- workflow: condensed candle snapshot
+
+    -- Option details (workflow: structured option data)
+    option_details          JSONB,
 
     -- Full AI analyst output text
     ai_explanation          TEXT,
+    plain_explanation       TEXT,            -- workflow: plain-text explanation
     key_factors             JSONB,           -- string array
 
     -- Raw payload (for full reproducibility)
@@ -118,7 +137,10 @@ CREATE TABLE IF NOT EXISTS trading_decisions (
     id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     session_id          UUID REFERENCES trading_sessions(id),
     snapshot_id         UUID REFERENCES signal_snapshots(id),
+    signal_snapshot_id  UUID REFERENCES signal_snapshots(id), -- workflow field
     ticker              VARCHAR(20) NOT NULL,
+    profile             VARCHAR(5),              -- S / M / L (workflow field)
+    trade_date          DATE DEFAULT CURRENT_DATE, -- workflow field
     decision_time       TIMESTAMPTZ DEFAULT NOW(),
 
     -- The orchestration decision (like a human trader would make)
@@ -140,7 +162,8 @@ CREATE TABLE IF NOT EXISTS trading_decisions (
     reasoning           TEXT NOT NULL,
 
     -- Confidence in this specific orchestration decision
-    orchestration_confidence NUMERIC(5,4),   -- 0..1
+    orchestration_confidence NUMERIC(8,4),   -- 0..1 (widened to prevent overflow)
+    ai_confidence       NUMERIC(8,4),        -- workflow field (widened to prevent overflow)
 
     -- What changed vs last decision?
     prior_decision_id   UUID REFERENCES trading_decisions(id),
@@ -158,9 +181,13 @@ CREATE TABLE IF NOT EXISTS trading_decisions (
     -- PLANNED / ACTIVE / STOPPED_OUT / TARGET_HIT / EXPIRED / CLOSED
 
     -- Key metrics at decision time
-    current_confidence  NUMERIC(5,4),
+    current_confidence  NUMERIC(8,4),
     current_trend       VARCHAR(20),
     current_rr          NUMERIC(8,4),
+
+    -- Workflow structured data
+    position_action     JSONB,               -- workflow: action details
+    signal_summary      JSONB,               -- workflow: signal summary
 
     -- AI agent metadata
     agent_model         VARCHAR(50) DEFAULT 'gpt-4.1-mini',
@@ -181,22 +208,25 @@ CREATE INDEX IF NOT EXISTS idx_decisions_ticker_time
 -- ============================================================================
 CREATE TABLE IF NOT EXISTS decision_confirmations (
     id                  UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
-    decision_id         UUID REFERENCES trading_decisions(id) NOT NULL,
-    snapshot_id         UUID REFERENCES signal_snapshots(id) NOT NULL,
+    decision_id         UUID REFERENCES trading_decisions(id),
+    snapshot_id         UUID REFERENCES signal_snapshots(id),
     ticker              VARCHAR(20) NOT NULL,
+    trade_date          DATE DEFAULT CURRENT_DATE, -- workflow field
     confirmed_at        TIMESTAMPTZ DEFAULT NOW(),
 
     -- Does this snapshot confirm or contradict the active decision?
-    confirms            BOOLEAN NOT NULL,     -- true = confirms, false = contradicts
+    confirms            BOOLEAN,              -- true = confirms, false = contradicts
     confirmation_type   VARCHAR(30),
     -- STRONG_CONFIRM   : all TFs agree with decision
     -- WEAK_CONFIRM     : majority TFs agree
     -- NEUTRAL          : mixed signals
     -- WEAK_CONTRADICT  : majority TFs disagree
     -- STRONG_CONTRADICT: all TFs flip against decision
+    -- CONFIRM / CONTRADICT / NEUTRAL (workflow simplified types)
 
     -- What specifically changed?
     detail              TEXT,
+    notes               TEXT,                 -- workflow field
 
     -- Running tally
     consecutive_confirms    INTEGER DEFAULT 0,
@@ -218,21 +248,32 @@ CREATE TABLE IF NOT EXISTS position_journal (
     session_id          UUID REFERENCES trading_sessions(id),
     decision_id         UUID REFERENCES trading_decisions(id),
     ticker              VARCHAR(20) NOT NULL,
+    profile             VARCHAR(5),              -- S / M / L (workflow field)
+    trade_date          DATE DEFAULT CURRENT_DATE, -- workflow field
 
     -- Position details (theoretical)
-    side                VARCHAR(10) NOT NULL,  -- CALL / PUT
+    side                VARCHAR(10),        -- CALL / PUT
     contract_symbol     VARCHAR(40),
+    option_contract_symbol VARCHAR(40),     -- workflow field
     entry_price         NUMERIC(10,4),
     entry_time          TIMESTAMPTZ DEFAULT NOW(),
 
     stop_price          NUMERIC(10,4),
     target_price        NUMERIC(10,4),
     qty                 INTEGER DEFAULT 1,
+    virtual_qty         INTEGER DEFAULT 1,       -- workflow field
+
+    -- Workflow premium fields
+    avg_entry_premium   NUMERIC(10,4),
+    current_stop        NUMERIC(10,4),
+    current_tp          NUMERIC(10,4),
 
     -- Exit tracking
     exit_price          NUMERIC(10,4),
     exit_time           TIMESTAMPTZ,
     exit_reason         VARCHAR(30),
+    close_reason        VARCHAR(30),             -- workflow field
+    closed_at           TIMESTAMPTZ,             -- workflow field
     -- STOP_HIT / TARGET_HIT / MANUAL_EXIT / REVERSAL / SESSION_CLOSE / EXPIRED
 
     -- Theoretical P&L
@@ -265,7 +306,7 @@ SELECT
     td.direction,
     td.reasoning AS decision_reasoning,
     ts.trading_date,
-    ts.profile
+    ts.profile AS session_profile
 FROM position_journal pj
 JOIN trading_decisions td ON td.id = pj.decision_id
 JOIN trading_sessions ts ON ts.id = pj.session_id
@@ -277,7 +318,7 @@ CREATE OR REPLACE VIEW v_latest_decisions AS
 SELECT DISTINCT ON (ticker)
     td.*,
     ts.trading_date,
-    ts.profile,
+    ts.profile AS session_profile,
     ts.status AS session_status
 FROM trading_decisions td
 JOIN trading_sessions ts ON ts.id = td.session_id
@@ -289,7 +330,7 @@ CREATE OR REPLACE VIEW v_today_signals AS
 SELECT
     ss.*,
     ts.trading_date,
-    ts.profile
+    ts.profile AS session_profile
 FROM signal_snapshots ss
 JOIN trading_sessions ts ON ts.id = ss.session_id
 WHERE ts.trading_date = CURRENT_DATE
@@ -300,6 +341,7 @@ CREATE OR REPLACE VIEW v_confirmation_streaks AS
 SELECT
     dc.decision_id,
     td.ticker,
+    td.trade_date,
     td.decision_type,
     td.direction,
     COUNT(*) FILTER (WHERE dc.confirms = true) AS total_confirms,
@@ -309,7 +351,7 @@ SELECT
     MAX(dc.confirmed_at) AS last_check_at
 FROM decision_confirmations dc
 JOIN trading_decisions td ON td.id = dc.decision_id
-GROUP BY dc.decision_id, td.ticker, td.decision_type, td.direction;
+GROUP BY dc.decision_id, td.ticker, td.trade_date, td.decision_type, td.direction;
 
 -- ============================================================================
 -- 7. workflow_indicators
