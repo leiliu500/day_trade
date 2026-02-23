@@ -25,6 +25,7 @@ BEGIN;
 -- but we list them explicitly for clarity.
 
 TRUNCATE TABLE
+    trading.trade_evaluations,
     trading.order_executions,
     trading.decision_confirmations,
     trading.position_journal,
