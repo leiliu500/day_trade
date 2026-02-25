@@ -25,6 +25,11 @@ BEGIN;
 -- but we list them explicitly for clarity.
 
 TRUNCATE TABLE
+    trading.portfolio_risk_state,
+    trading.order_lifecycle,
+    trading.order_groups,
+    trading.broker_positions,
+    trading.broker_open_orders,
     trading.trade_evaluations,
     trading.order_executions,
     trading.decision_confirmations,
@@ -35,6 +40,20 @@ TRUNCATE TABLE
     trading.workflow_indicators,
     trading.workflow_decisions
 RESTART IDENTITY CASCADE;
+
+-- Reset portfolio risk limits to defaults
+DELETE FROM trading.portfolio_risk_limits;
+INSERT INTO trading.portfolio_risk_limits (limit_name, limit_value, description, enabled) VALUES
+    ('max_concurrent_positions',    5,       'Maximum number of simultaneously open positions across all tickers', TRUE),
+    ('max_positions_per_ticker',    2,       'Maximum open positions per single ticker (e.g., call + put)', TRUE),
+    ('max_daily_orders',           20,       'Maximum total orders (entries) per day', TRUE),
+    ('max_daily_loss_usd',       500.00,     'Stop trading after daily realized loss exceeds this amount', TRUE),
+    ('max_daily_loss_pct',         2.00,     'Stop trading after daily realized loss exceeds this % of equity', TRUE),
+    ('max_single_order_risk_pct',  0.50,     'Maximum risk per single order as % of equity', TRUE),
+    ('max_portfolio_risk_pct',     3.00,     'Maximum total portfolio risk (all open positions) as % of equity', TRUE),
+    ('max_ticker_exposure_pct',    1.50,     'Maximum total exposure to a single ticker as % of equity', TRUE),
+    ('min_buying_power_reserve',  500.00,    'Keep at least this much buying power in reserve', TRUE),
+    ('max_correlated_positions',    3,       'Maximum positions in correlated tickers (e.g., SPY+QQQ+IWM)', TRUE);
 
 COMMIT;
 
